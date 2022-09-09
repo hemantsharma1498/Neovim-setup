@@ -1,0 +1,5 @@
+require('user.packer-packages')
+require('user.set')
+require('user.keybindings')
+require('user.cmp')
+require('user.colourscheme')
