@@ -56,10 +56,20 @@ return require('packer').startup(function()
 	use "hrsh7th/cmp-buffer"        -- Buffer completions
 	use "hrsh7th/cmp-path"          -- Path completions
 	use "saadparwaiz1/cmp_luasnip"  -- Snippet completions
-
-
+    use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-nvim-lua"
     --Snippet engine
     use "L3MON4D3/LuaSnip" 
     use "rafamadriz/friendly-snippets"
-   
+    
+
+    --LSP 
+    use "neovim/nvim-lspconfig"             --Enable LSP
+    use "williamboman/nvim-lsp-installer"   --Simple to use language server installer
+
+    --Automatically set up your configuration after cloning packer.vim
+    --To remain placed at the end, after all plugins
+    if PACKER_BOOTSTRAP then
+        require("packer").sync()
+    end
 end)
