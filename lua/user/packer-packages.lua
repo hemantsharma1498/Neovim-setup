@@ -51,7 +51,6 @@ return require('packer').startup(function()
     --Useful lua functions used in lots of plugins
     use "nvim-lua/plenary.nvim"
     use "nvim-lua/popup.nvim"
-    
     use "hrsh7th/nvim-cmp"          -- The completion plugin
 	use "hrsh7th/cmp-buffer"        -- Buffer completions
 	use "hrsh7th/cmp-path"          -- Path completions
@@ -61,7 +60,6 @@ return require('packer').startup(function()
     --Snippet engine
     use "L3MON4D3/LuaSnip" 
     use "rafamadriz/friendly-snippets"
-    
 
     --LSP 
     use "neovim/nvim-lspconfig"             --Enable LSP
